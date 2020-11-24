@@ -3,6 +3,7 @@ import EmailCheckEndpoint from './controllers/email_validator';
 
 const apiModule: Module = async function (this: any, _options: any) {
   if (this.options.dev || this.options._start) {
+    console.info('adding middlewares');
     this.addServerMiddleware({
       handler: EmailCheckEndpoint,
       path: '/api/'
