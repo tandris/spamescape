@@ -14,7 +14,7 @@
           Escape the spam folder by cleaning your address list.
         </v-card-subtitle>
         <v-card-text>
-          <v-form v-model="isValid">
+          <v-form v-model="isValid" v-on:submit.prevent="validateEmail">
             <v-text-field
               v-model="model.emailAddress"
               :rules="[rules.required, rules.email]"
@@ -161,14 +161,16 @@ export default {
   },
   methods: {
     async validateEmail() {
-      this.loading = true;
-      this.result = null;
-      try {
-        this.result = await this.$axios.$post(`/api/check?email=${this.model.emailAddress}`)
-      } catch (e) {
+      if (this.isValid && !this.loading) {
+        this.loading = true;
+        this.result = null;
+        try {
+          this.result = await this.$axios.$post(`/api/check?email=${this.model.emailAddress}`)
+        } catch (e) {
 
-      } finally {
-        this.loading = false;
+        } finally {
+          this.loading = false;
+        }
       }
     }
   }

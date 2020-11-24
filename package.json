@@ -28,8 +28,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
     "email-deep-validator": "^3.3.0",
-    "nuxt": "^2.14.6",
-    "proxysocket": "^1.2.0"
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
