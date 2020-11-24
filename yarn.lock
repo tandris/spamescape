@@ -7333,6 +7333,11 @@ proxy-addr@~2.0.5:
     forwarded "~0.1.2"
     ipaddr.js "1.9.1"
 
+proxysocket@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/proxysocket/-/proxysocket-1.2.0.tgz#0d654c36754a40421e7e65971d62fe1f1a6938b7"
+  integrity sha1-DWVMNnVKQEIefmWXHWL+HxppOLc=
+
 prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"

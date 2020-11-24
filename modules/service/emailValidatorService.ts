@@ -1,4 +1,4 @@
-const EmailValidator = require('email-deep-validator');
+const EmailValidator = require('./util');
 
 export interface ValidationResult {
   emailAddress: string;
@@ -25,4 +25,5 @@ export class EmailValidatorService {
       isValid: wellFormed && validDomain && (validMailbox === null || validMailbox)
     };
   }
+
 }
