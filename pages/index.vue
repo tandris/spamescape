@@ -77,7 +77,7 @@
                       </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title>It the domain valid?</v-list-item-title>
-                        <v-list-item-subtitle v-if="result.wellFormed">The domain seems to be valid.
+                        <v-list-item-subtitle v-if="result.validDomain">The domain seems to be valid.
                         </v-list-item-subtitle>
                         <v-list-item-subtitle v-else>The domain isn't valid.</v-list-item-subtitle>
                       </v-list-item-content>
