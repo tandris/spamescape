@@ -1,4 +1,4 @@
-const EmailValidator = require('./util');
+const EmailValidator = require('email-deep-validator');
 
 export interface ValidationResult {
   emailAddress: string;
