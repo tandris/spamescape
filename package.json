@@ -1,0 +1,55 @@
+{
+  "name": "spamescape",
+  "version": "1.0.0-beta.1",
+  "description": "An email address validation and cleaning tool to escape the spam folder.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tandris/strapi-plugin-codemirror"
+  },
+  "author": "tandris",
+  "license": "MIT",
+  "private": false,
+  "maintainers": [
+    {
+      "name": "tandris",
+      "url": "https://github.com/tandris"
+    }
+  ],
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "core-js": "^3.6.5",
+    "email-deep-validator": "^3.3.0",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "keywords": [
+    "email",
+    "spam",
+    "validation",
+    "nuxt.js",
+    "cleaning"
+  ]
+}
